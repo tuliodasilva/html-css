@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@font-face {
+    font-family: 'Lacheyard';
+    src: url('fonts/Lacheyard.otf') format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #F28A2E;
+    --cor1: #BF4417;
+    --cor2: #401A0C;
+    --cor3: #8C2A14;
+    --cor4: #732412;
+    --cor5: #1d0c06;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Source Sans 3", sans-serif;
+    --fonte-menu: 'Birds of Paradise', sans-serif;
+    --fonte-maior: 'Lacheyard';
+}
+
+p {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 20px 0px;
+    background-color: var(--cor5);
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: transform 1.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+}
+
+.produto {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 428px;
+    padding: 40px 0px ;
+    transition: transform 0.8s ease;
+}
+
+.produto:hover {
+    transform: scale(1.1);
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 50px;
+    font-weight: bolder;
+    background-color: var(--cor5);
+    transition: transform 0.8s ease;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    font-style: italic;
+    transform: scale(1.3);
+}
+
+header {
+    background-color: var(--cor5);
+}
+
+header h1 {
+    color: var(--cor0);
+    text-align: center;
+    font-family: var(--fonte-maior);
+    background-color: var(--cor5);
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: 50;
+    font-size: 80px;
+    transition: transform 1.2s ease;
+}
+
+
+header h2 {
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    padding-top: -20px;
+    padding-bottom: 200px;
+}
+
+main {
+    background-color: var(--cor2);
+
+}
+
+main img {
+    width: 100%;
+}
+
+article > h3 {
+    background-color: var(--cor5);
+    padding: 80px 80px 10px 80px;
+    margin: 0px -3800px;
+    text-align: center;
+    color: var(--cor0);
+}
+
+article > p {
+    text-align: justify;
+    text-indent: 2em;
+    word-spacing: 8px;
+    margin: 20px 0px;
+    line-height: 1.025em;
+}
+
+.area {
+    background-color: var(--cor2);
+}
+
+.conteudo {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+ul {
+    color: white;
+    font-size: large;
+    padding-top: 100px;
+    padding-left: 200px;
+    columns: 2;
+}

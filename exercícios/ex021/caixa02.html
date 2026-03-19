@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #A68F97;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+
+        nav {
+            background-color: #79717A;
+            margin: 0px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.479);
+
+        }
+
+        nav > a {
+            color: whitesmoke;
+            background-color: none;
+            font-weight: lighter;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        main {
+            background-color: whitesmoke;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            
+        }
+
+        article {
+            background-color: #79717A;
+            border-radius: 10px;
+            padding: 8px;
+            text-indent: 2em;
+
+        }
+
+        article > p {
+            margin: 2em;
+        }
+
+        article > h2 {
+            text-align: center;
+        }
+        
+        article > aside {
+            font-style: italic;
+            background-color: #4B4952;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            margin: 20px;
+            
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 50%;
+            display: block;
+            box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.377);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Texto Novo Viu</p>
+        </section>
+       <section id="noticias">
+            <article>
+                <h2>Notícias</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptatum dolorum facilis hic. Praesentium adipisci quis porro aperiam officiis id, eveniet, commodi temporibus enim sunt quos quod repudiandae dolorum nihil!</p>
+                <aside>
+                    <p>Assinado por Túlio da Silva Chaves</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+       </section> 
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Cursoemvideo</p>
+    </footer>
+    <div id="bola"></div>
+
+    
+</body>
+</html>

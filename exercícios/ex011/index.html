@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em várioas dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reperoduzir áudio em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop> <!--o preload é a forma que diz como começa o audio "auto" automaticamente irá começar a reproduzir "metadata" irá mostrar parte dos arquivos "none" só irá reproduzir se o cliente apertar.-->
+    <!--controls é para aparecer os controles de áudio na web-->
+    <!--loop é para o áudio ficar repetindo sempre (não recomendo)-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!--Aqui é uma ordem, sempre irá iniciar tentando carregar esse.--> 
+        <source src="midia/guanacast-33.ogg" type="audio/ogg"> <!--Aqui é outra opção, só mostrando mesmo, tenho que mudar os arquivos lá dentro da minha pasta.-->
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmnte seu navegador não consegue reproduzir áudio</p>
+        <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3!</a>
+
+    </audio>    
+
+
+</body>
+</html>

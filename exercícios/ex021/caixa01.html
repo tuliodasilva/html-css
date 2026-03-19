@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkgray;
+
+
+            padding: 10px 10px 10px 10px; /* Se as 4 forem iguais é só eu colocar apenas uma vez o valor que irá funcionar como se fosse os 4.*/
+                                          /* Se eu colocar 2 valores, ele irá igualar os valores equivalementes Ou seja, 10px 20px será 10px no de cima 10px no debaixo 20px no da direita 20px no da esquerda.*/
+
+
+            margin: 20px auto 40px auto; /* Para centralizar é só eu colocar margin: 20px auto 40px auto*/
+
+            outline: 5px dashed salmon;
+
+
+        }
+
+        a { /* inline-level */
+
+            border: 5px solid red;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
